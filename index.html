@@ -29,6 +29,15 @@
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
+                <button onclick="doTranslate('en')">English</button>
+<button onclick="doTranslate('es')">Español</button>
+
+<script>
+  function doTranslate(lang) {
+    var frame = document.querySelector("iframe.goog-te-banner-frame");
+    if (frame) frame.contentWindow.postMessage({event: "translate", lang: lang}, "*");
+  }
+</script>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>

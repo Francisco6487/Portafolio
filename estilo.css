@@ -625,3 +625,22 @@ footer .arriba {
   color: white;
   pointer-events: none; /* Mejora el clic en el ícono */
 }
+
+
+/* Botón de idioma dentro del menú */
+nav ul li.idioma a {
+  padding: 8px 14px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li.idioma a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Ícono opcional */
+nav ul li.idioma i {
+  margin-right: 6px;
+}
